@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  border: 1px solid black;
+  margin-bottom: 2px;
+}
+
+p {
+  background-color: #ccc;
+  border-right: 1px solid black;
+  padding: 10px 20px;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 10px 10px 30px;
+  background-color: rgb(0, 221, 255);
+  flex: 1;
+}
+
+li.dragged p {
+  background-color: rgb(160, 160, 160);
+}
+
+li.dragging div {
+  background-color: rgb(1, 133, 154);
+}
+
+.drag-spot {
+  background-color: rgb(89, 201, 213);
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+button {
+  margin: 20px 0;
+  outline: none;
+  border: 1px solid black;
+  padding: 10px 40px;
+  background: none;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.reset-btn {
+  display: none;
+}
+
+.item-title {
+  pointer-events: none;
+}
+
+.list-item.right {
+  border: 3px solid green;
+}
+
+.list-item.wrong {
+  border: 3px solid red;
+}
